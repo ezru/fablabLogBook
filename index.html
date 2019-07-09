@@ -14,8 +14,8 @@
 
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <a class="navbar-brand" href="#">
+    <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="index.html">
         <img src="img/FabLab_logo.png" width="50" height="50" class="d-inline-block align-top" alt="">
         FabLab Jerez
       </a>
@@ -25,35 +25,83 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item active">
-            <a class="nav-link" href="#">Home <span class="sr-only">(Current)</span></a>
+            <a class="nav-link" href="index.html">Home <span class="sr-only">(Current)</span></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Job Order</a>
+            <a class="nav-link" href="jobs.html">Job Order</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Training</a>
+            <a class="nav-link" href="training.html">Training</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Timetable</a>
+            <a class="nav-link" href="timetable.html">Timetable</a>
           </li>
         </ul>
-        <form class="form-inline my-2 my-lg-0" action="index.html" method="post">
-          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success my-2 my-sm-0" type="submit" name="button">Search</button>
+        <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" type="text" placeholder="Username" aria-label="Username">
+          <input class="form-control mr-sm-2" type="password" placeholder="Password" aria-label="Password">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit" name="siteLogin">Login</button>
         </form>
       </div>
     </nav>
 
     <div class="container">
       <div class="row justify-content-md-center">
-        <div class="col col-lg-2">
-        </div>
         <div class="col-sm">
           <h1> Welcome to FabLab Log Book </h1>
         </div>
-        <div class="col col-lg-2">
+      </div>
+      <div class="row">
+        <div class="col-sm-3">
+          <div class="card text-white bg-dark">
+            <div class="card-header">The Boss</div>
+            <img src="img/gru.jpg" class="card-img-mid" alt="Boss">
+            <div class="card-body">
+              <a class="btn btn-primary" data-toggle="collapse" href="#theBoss" role="button" aria-expanded="false" aria-controls="theBoss">Read more about ME!</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-1">
+        </div>
+        <div class="col-sm-3">
+          <div class="card text-white bg-dark">
+            <div class="card-header">Worker #1</div>
+            <img src="img/minion1.jpg" class="card-img-mid" alt="Boss">
+            <div class="card-body">
+              <a href="#" class="btn btn-primary">Read more about ME!</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-1">
+        </div>
+        <div class="col-sm-3">
+          <div class="card text-white bg-dark">
+            <div class="card-header">Worker #2</div>
+            <img src="img/minion2.jpg" class="card-img-mid" alt="Boss">
+            <div class="card-body">
+              <a href="#" class="btn btn-primary">Read more about ME!</a>
+            </div>
+          </div>
         </div>
       </div>
+
+      <div class="row">
+        <div class="col">
+          <div class="collapse multi-collapse" id="theBoss">
+            <div class="card card-body">
+              I run the FabLab. What I say goes! So, you want to know more about me. Let me tell you I am a mean boss and everyone squeeks in their boots wen they hear me roar in the corridor!
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="collapse multi-collapse" id="multiCollapseExample2">
+            <div class="card card-body">
+              Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+            </div>
+          </div>
+        </div>
+      </div>
+
     </div>
 
     <!-- Optional Javascript needed by Bootstrap -->
