@@ -1,3 +1,11 @@
 body {
   font-family: 'Rubik', sans-serif;
 }
+
+.topPage {
+  margin-top: 50px;
+}
+
+.carousel-inner > .item > img{
+margin:auto;
+}
